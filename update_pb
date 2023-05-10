@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "removing existing pocketbase.exe & pb_migrations in code/pb"
+rm -rf /mnt/c/Users/denni/Desktop/code/pb/pocketbase.exe /mnt/c/Users/denni/Desktop/code/pb/pb_migrations
+echo "removed existing pocketbase.exe & pb_migrations in code/pb"
+
+echo "copyig new  pocketbase.exe & pb_migrations to code/pb"
+cp -r pocketbase.exe /mnt/c/Users/denni/Desktop/code/pb/
+cp -r pb_migrations /mnt/c/Users/denni/Desktop/code/pb/
+
+echo "transfer complete"
