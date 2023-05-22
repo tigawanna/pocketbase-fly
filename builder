@@ -8,8 +8,8 @@ fi
 package_split=(${package//\// })
 package_name=${package_split[-1]}
 # you can also build for other platforms like so 
-# platforms=("linux/amd64" "windows/amd64")
-platforms=("linux/amd64")
+platforms=("linux/amd64" "windows/amd64")
+# platforms=("linux/amd64")
 rm pocketbase
 # rm pocketbase.exe
 for platform in "${platforms[@]}"

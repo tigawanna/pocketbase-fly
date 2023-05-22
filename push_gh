@@ -1,0 +1,7 @@
+#!/bin/bash
+./builder main.go
+zip -r pocketbase.zip pocketbase.exe
+git add pocketbase.zip
+git commit -m "add exe"
+git push
+
