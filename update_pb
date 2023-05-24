@@ -1,11 +1,24 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "removing existing pocketbase.exe & pb_migrations in code/pb"
-rm -rf /mnt/c/Users/denni/Desktop/code/pb/pocketbase.exe /mnt/c/Users/denni/Desktop/code/pb/pb_migrations
-echo "removed existing pocketbase.exe & pb_migrations in code/pb"
+# update all devhub-backend modules 
+go get -u github.com/tigawanna/devhub-backend/...
+go mod tidy
 
-echo "copyig new  pocketbase.exe & pb_migrations to code/pb"
-cp -r pocketbase.exe /mnt/c/Users/denni/Desktop/code/pb/
-cp -r pb_migrations /mnt/c/Users/denni/Desktop/code/pb/
+#  start docker for fly-io build
+sudo systemctl start docker
+# fly.io local build
+fly deploy --local-only
 
-echo "transfer complete"
+#  build new exucutable nd commit push changes to github
+./builder main.go
+
+zip -r pocketbase.zip pocketbase.exe
+git add .
+git commit -m "updated version"
+git push
+
+
+
+
+
+
