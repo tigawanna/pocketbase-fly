@@ -58,10 +58,15 @@ func main() {
 	// custom code Plugins and hooks:
 	// ---------------------------------------------------------------
 	// Define the custom post route
+
+
+
+
 	customPostsRoute := CustomPostsRoute(app)
 	customRepliesRoute := CustomRepliesRoute(app)
 	customOnePostRoute := CustomOnePostRoute(app)
 	customNotificationsRoute := CustomNotificationsRoute(app)
+	customFriendRoute:=CustomFriendsRoute(app)
 	monthlyBills:=CustomBillsRoute(app)
 	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
 		e.Router.AddRoute(customPostsRoute)
@@ -69,6 +74,7 @@ func main() {
 		e.Router.AddRoute(customOnePostRoute)
 		e.Router.AddRoute(customNotificationsRoute)
 		e.Router.AddRoute(monthlyBills)
+		e.Router.AddRoute(customFriendRoute)
 
 		return nil
 	})

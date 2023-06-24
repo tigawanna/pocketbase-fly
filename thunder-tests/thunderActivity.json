@@ -177,11 +177,11 @@
     "colId": "history",
     "containerId": "",
     "name": "http://127.0.0.1:8090/custom_notifications?created=2023-03-27 09:49:21.523Z",
-    "url": "http://127.0.0.1:8090/custom_notifications?created=2023-03-27 09:49:21.523Z",
+    "url": "http://127.0.0.1:8090/custom_friends?created=2023-03-27 09:49:21.523Z",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-03-29T03:40:00.231Z",
-    "modified": "2023-03-29T03:40:00.231Z",
+    "modified": "2023-06-24T16:40:10.423Z",
     "headers": [],
     "params": [
       {

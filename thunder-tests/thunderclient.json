@@ -78,5 +78,41 @@
       }
     ],
     "tests": []
+  },
+  {
+    "_id": "69b5a855-cd46-4bb9-8553-b850ba781298",
+    "colId": "e441fad8-31ff-4e84-898e-27cf0766ab6e",
+    "containerId": "",
+    "name": "custom_friends",
+    "url": "http://127.0.0.1:8090/custom_friends?limit=5&logged_in=2gbkpq07uqvgdvv&created=2023-06-24 06:35:58.459Z ",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-06-24T16:42:29.340Z",
+    "modified": "2023-06-24T17:04:37.464Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "qvvjeaf0m1rr1sw",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "limit",
+        "value": "5",
+        "isPath": false
+      },
+      {
+        "name": "logged_in",
+        "value": "2gbkpq07uqvgdvv",
+        "isPath": false
+      },
+      {
+        "name": "created",
+        "value": "2023-06-24 06:35:58.459Z ",
+        "isPath": false
+      }
+    ],
+    "tests": []
   }
 ]
